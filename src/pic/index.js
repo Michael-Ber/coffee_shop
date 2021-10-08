@@ -1,0 +1,10 @@
+export const background = require('./main_bg.jpg').default;
+export const presto = require('./presto.jpg').default;
+export const solimo = require('./solimo.jpg').default;
+export const aromistico = require('./aromistico.jpg').default;
+export const coffeeBg = require('./coffee_bg.jpg').default;
+export const coffeeItemAbout = require('./coffee_item_about.jpg').default;
+export const coffeeItemImg = require('./coffee_item_img.jpg').default;
+export const drinkingGirl = require('./drinking_girl.jpg').default;
+export const goodsBg = require('./goods_bg.jpg').default;
+export const goodsItem = require('./goods_item.jpg').default;
