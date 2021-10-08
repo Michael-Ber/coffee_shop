@@ -1,13 +1,21 @@
 .header {
+    position: absolute;
+    top: 30px;
+    left: 150px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding-top: 30px;
     &__link {
         color: #fff;
         text-decoration: none;
         &:nth-child(n):not(:last-child) {
             margin-right: 40px;
         }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__icon {
+        color: #fff;
     }
 }

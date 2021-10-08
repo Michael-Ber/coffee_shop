@@ -6,15 +6,18 @@ import Header from '../header/header';
 
 import './app.scss';
 
+
 function App() {
 	return (
 		<div className="app">
-			<Header />
-			<Switch>
-				<Route path = '/' exact component={PageMain}/>
-				<Route path = '/OurCoffee' exact component={PageCoffee}/>
-				<Route path = '/ForYourPleasure' exact component={PageGoods}/>
-			</Switch>
+			<div className="app__container">
+				<Header />
+				<Switch>
+					<Route path = '/' exact><PageMain title='Everything You Love About Coffee' /></Route>
+					<Route path = '/OurCoffee' exact component={PageCoffee}/>
+					<Route path = '/ForYourPleasure' exact component={PageGoods}/>
+				</Switch>
+			</div>
 		</div>
 	);
 }
