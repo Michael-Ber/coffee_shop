@@ -1,15 +1,18 @@
 import './ourbest.scss';
+import {Link} from 'react-router-dom';
 
 const Ourbest = (props) => {
     const {data} = props;
     const elems = data.map(item => {
         const {img, alt, name, cost, id} = item;
         return (
-            <li key={id} className = 'ourbest__list-item'>
-                <img src={img} alt={alt} className="ourbest__list-item-img"/>
-                <span className = 'ourbest__list-item-name'>{name}</span>
-                <span className = 'ourbest__list-item-cost'>{cost + '$'}</span>
-            </li>
+            <Link to = {`/${name}`} className = 'footer__link' key={id}>
+                <li className = 'ourbest__list-item'>
+                    <img src={img} alt={alt} className="ourbest__list-item-img"/>
+                    <span className = 'ourbest__list-item-name'>{name}</span>
+                    <span className = 'ourbest__list-item-cost'>{cost + '$'}</span>
+                </li>
+            </Link> 
         )
     })
     return (

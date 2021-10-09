@@ -25,7 +25,7 @@ const Footer = () => {
                 <Link to = '/OurCoffee' className = 'footer__link'>
                     Our coffee
                 </Link>
-                <Link to = 'ForYourPleasure' className = 'footer__link'>
+                <Link to = '/ForYourPleasure' className = 'footer__link'>
                     For your pleasure
                 </Link>
             </div>

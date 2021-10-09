@@ -1,0 +1,77 @@
+.coffee {
+    height: 260px;
+    background: url('./img/coffee_bg.jpg') center center/cover no-repeat;
+    &__content {
+        padding-top: 130px;
+        text-align: center;
+        color: #fff;
+        &-title {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        &-subtitle {
+            font-size: 24px;  
+            margin: 0;  
+            margin-top: 35px;
+        }
+        &-btn {
+            width: 120px;
+            height: 30px;
+            margin-top: 20px;
+            font-size: 14px;
+            font-family: 'Merienda';
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            outline: 1px solid #fff;
+            border-radius: 3px;
+            cursor: pointer;
+            &:hover {
+                color: darken(#fff, 20%);
+                outline-color: darken(#fff, 20%);
+            }
+        }
+    }
+    &__about {
+        background-color: #fff;
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &-img {
+            display: flex;
+            position: relative;
+            width: 272px;
+            height: 355px;
+            margin-top: 80px;
+            margin-right: 80px;
+            box-shadow: 0 0 10px (#000);
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 240px;
+            height: 2px;
+            background-color: #000;
+            margin: 0 auto;
+        }
+        
+    }
+    &__searchPanel {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: #fff;
+    }
+    &__wrapper {
+        background-color: #fff;
+    }
+}

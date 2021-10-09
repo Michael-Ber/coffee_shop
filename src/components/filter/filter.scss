@@ -1,0 +1,23 @@
+.filter {
+    display: inline-block;
+    span {
+        margin-right: 35px;
+        font-size: 14px;
+    }
+    button {
+        width: 75px;
+        height: 30px;
+        border: none;
+        box-shadow: 0 0 5px (rgba(#000, .2));
+        background-color: #fff;
+        font-family: 'Merienda';
+        font-size: 12px;
+        cursor: pointer;
+        &:nth-child(n):not(:last-child) {
+            margin-right: 5px;
+        }
+        &:hover {
+            background-color: darken(#fff, 10%);
+        }
+    }
+}
